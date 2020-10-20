@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!--
+    Add-on scheme version 3.0 description
+    All parameters that are not marked as optional must be defined in the scheme.
+    @edition_type - an optional attribute available for any element related to settings. This attribute defines editions where a setting is available. If this attribute is left empty, the value of the parent element will be used. If that value is not set either, then the value is considered ROOT.
+-->
+<addon scheme="3.0" edition_type="ROOT,ULT:VENDOR">
+    <id>codoforum_sso</id>
+    <version>1.1</version>
+    <status>active</status>
+     <!-- Defines CS-Cart products in which the add-on will be automatically included in the list after installation. -->
+    <auto_install>MULTIVENDOR,ULTIMATE</auto_install>
+    
+    
+    <name>Codoforum SSO</name>
+    <description>Integrates with Codoforum login. Make sure SSO plugin in codoforum is configured properly.</description>
+    <priority>100500</priority>
+    <settings>
+        <sections>
+            <section id="general">
+                <items>
+                    <item id="codoforum_client_id">
+                        <name>Codoforum SSO client id</name>
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                    <item id="codoforum_secret">
+                        <name>Codoforum SSO secret</name>
+                        <type>input</type>
+                        <default_value/>
+                    </item>
+                </items>
+            </section>
+        </sections>
+    </settings>
+<marketplace_product_id>2967</marketplace_product_id></addon>
